@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href= "css/style.css">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <!--<img id= "logo" src="./imagenes/logo.png"> -->
+        <header>
+            <h1>Encriptador de texto</h1>
+        </header>
+        <main>
+            <section class="inputText">
+
+                <!--Ingreso de texto-->
+                <div class="div-text">
+    
+                    <textarea id="textInto" cols="35" rows="20" placeholder="Ingrese el texto acá..."></textarea>
+    
+                </div>
+                <div class="warning">
+
+                    <p>
+    
+                        <i class="bi bi-exclamation-circle"></i> 🛈 Solo letras minusculas y sin acentos.
+    
+                    </p>
+    
+                </div>
+                <div class="buttons">
+
+                    <button id="encrypt" class="buttonFunctional" type="button">Encriptar</button>
+    
+                    <button id="desencrypt" class="buttonFunctional" type="button">Desencriptar</button>
+    
+                </div>
+
+            </section>
+            
+            <section class="exitText">
+
+                <textarea id="text-result" cols="30" rows="10" disabled></textarea>
+                <div id="msj">
+
+                    <h3 id="mensaje-1">Ningún mensaje fue encontrado</h3>
+    
+                    <p id="mensaje-2">Ingrese el texto que desees encriptar o desencriptar.</p>
+    
+                </div>
+                <div class="copyText">
+
+                    <button id="copy" class="buttonFunctional" type="button" >Copiar</button>
+    
+                </div>
+
+            </section>
+
+            <img src="./imagenes/default.png" id="img-default">
+
+        </main>
+    </body>
+    <footer>
+
+        <div class="socialNetworks">
+            
+            <div class = "icon">
+                <!--INSTAGRAM-->
+                <a href="https://www.instagram.com/valesanchez_11/" class="instagram" target="_blank"></a>
+                <!--LINKEDLN-->
+                <a href="https://www.linkedin.com/in/valeria-sanchez-benavides-b85547233/" class="linkedln" target="_blank"></a>
+                <!--GITHUB-->
+                <a href="https://github.com/val1108" class="github" target="_blank"></a>
+            </div>
+        </div>
+        
+        <div id="copyright">
+            <p>&copy Copyright Valeria Sanchez 2022</p>
+        </div>
+
+    </footer>
+    <script src = "js/textFunctions.js" ></script>
+    <script src = "js/buttonsFunctions.js" ></script>
+</html>
